@@ -32,11 +32,10 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/prueba', 'Home::prueba');
 $routes->get('/api', 'Home::api');
+$routes->put('/apirest', 'Home::apirest');
 $routes->get('/login', 'Home::login');
 $routes->get('/getUsers', 'Home::getUsers');
 $routes->post('/getUser/(:any)', 'Home::getUser/$1');
-
-
 $routes->delete('/deleteUser/(:any)', 'Home::deleteUser/$1');
 
 //$routes->get('/testbd/(:any)', 'Home::testbd/$1');

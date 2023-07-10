@@ -45,7 +45,20 @@ public function api()
 
     return $this->response->setJSON($resultado);
 }
+public function apirest()
+{ 
+   
+$parametros=array(
+    'message' => 'Aprendiendo a desarrollar aplicaciones en Facebook',
+                  'name' => 'Adriana',
+                  'caption' => 'Mi primer aplicacion en Facebook',
+                  'description' => 'Es genial');
+                
+        $resultado = array($parametros);
 
+                  return $this->response->setJSON($resultado);
+  
+}
 
     public function login(){
 
